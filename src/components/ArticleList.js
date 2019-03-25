@@ -16,6 +16,7 @@ class ArticleList extends Component {
             <ul>
                 {articles.map(article =>
                     <Article article={article}
+                        key={article.id}
                         isOpen={article.id === openArticleId}
                         toggleOpen={toggleOpenArticle(article.id)} />
                 )}
