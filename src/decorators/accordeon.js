@@ -3,7 +3,7 @@ import React, { Component as ReactComponent } from 'react';
 export default (OriginalComponent) =>
     class AccordeonComponent extends ReactComponent {
         state = {
-            openArticleId: null
+            openArticleId: this.props.openArticleId
         };
 
         toggleOpenArticle = (openArticleId) => evt => {
